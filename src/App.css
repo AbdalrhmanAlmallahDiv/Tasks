@@ -1,0 +1,185 @@
+*{
+    text-decoration: none;
+}
+.App{
+    background-color: rgba(229, 204, 171, 0.823);
+    height: 100vh;
+    display: grid;
+}
+.logo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 200px;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-size: xx-large;
+    color: orange;
+    height: 60px;
+    margin-bottom: -300px;
+}
+.name1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: -15px;
+    color: rgb(8, 74, 15);
+    margin-top: -150px;
+    margin-bottom: -150px;
+}
+.food1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: orange;
+    margin-top: -300px;
+}
+.containerBtn{
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    height: 100px;
+    margin-top: -200px;
+}
+.btn1{
+    width: 300px;
+    background-color:rgb(27, 40, 15) !important ;
+    font-family:serif !important;
+}
+.form1{
+    display: grid;
+}
+.inp1{
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    margin-top: -290px;
+}
+.inp2{
+    display: grid;
+    width: 300px;
+    height: 130px;
+}
+#outlined-basic1{
+max-height: 20px !important;
+}
+#outlined-basic2{
+max-height: 20px !important;
+}
+
+.radio1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 40px;
+    margin-top: -20px;
+
+}
+.btnCon{
+    display: flex;
+    justify-content: center;
+    height: 40px;
+    margin-top: -40px;
+
+}
+.btn3{
+    width: 300px;
+    background-color:rgb(27, 40, 15) !important ;
+
+}
+.forget{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 40px;
+    margin-top: -40px;
+
+}
+.conhead{
+    display: grid;
+}
+.name2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 190px;
+    color: rgb(8, 74, 15);
+    height: 40px;
+}
+.food2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: orange;
+    margin-top: -70px;
+    height: 40px;
+}
+.conall{
+    display: grid;
+}
+
+
+.parent {
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+font-family: Arial, Helvetica, sans-serif;
+ display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+height: 100%;
+width: 100%;
+overflow: hidden;
+}
+.container{
+    width: 100%;
+    max-width: 700px;
+    margin: auto;
+    padding: 40px;
+    z-index: 1;
+}
+
+.div1 { 
+    text-align: center;
+    margin-bottom: 20px;    
+}
+.div1 span{
+    color: orange;
+    font-size: 60px;
+    font-weight: bold;
+}
+.div2 { 
+    font-size: 16px;
+    color: rgb(8, 74, 15);
+    line-height: 1.4;
+ }
+.div3 { color: orange; }
+.div4 { text-align: center; }
+form{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.input-row{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    margin-bottom: 15px;
+}
+.input-row .align-end{
+    align-items: center;
+    justify-content: space-between;
+}
+.terms{
+    white-space: nowrap;
+    margin: 0;
+    display: flex;
+    gap: 5px;
+    margin-bottom: 20px;
+    font-size: 16px;
+    margin-left: 44px;
+}
+.div13 { 
+    cursor: pointer;
+}
