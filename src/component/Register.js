@@ -2,7 +2,16 @@ import TextField from "@mui/material/TextField";
 import FormControlLabel from "@mui/material/FormControlLabel";
 import Radio from "@mui/material/Radio";
 import Button from "@mui/material/Button";
+
+import { useState } from "react";
 export default function Register() {
+  const[firstName,setFirstName]=useState("");
+  const[lastName,setLastName]=useState("");
+  const[email,setEmail]=useState("");
+  const[phoneNumber,setPhoneNumber]=useState("");
+  const[kitchenName,setKitchenName]=useState("");
+  const[password,setPassword]=useState("");
+  const[passwordConfig,setPasswordConfig]=useState("");
   return (
     <>
       <div className="parent">
@@ -27,6 +36,10 @@ export default function Register() {
                 id="outlined-basic1"
                 label="First Name"
                 variant="outlined"
+                value={firstName}
+                onChange={(e) => {
+                setFirstName(e.target.value);
+              }}
               />
 
               <TextField
@@ -34,6 +47,10 @@ export default function Register() {
                 id="outlined-basic1"
                 label="Last Name"
                 variant="outlined"
+                value={lastName}
+                onChange={(e) => {
+                setLastName(e.target.value);
+              }}
               />
             </div>
             <div class="input-row">
@@ -43,12 +60,20 @@ export default function Register() {
                 id="outlined-basic1"
                 label="Email"
                 variant="outlined"
+                value={email}
+                onChange={(e) => {
+                setEmail(e.target.value);
+              }}
               />
               <TextField
                 type="tel"
                 id="outlined-basic1"
                 label="Phone Number"
                 variant="outlined"
+                value={phoneNumber}
+                onChange={(e) => {
+                setPhoneNumber(e.target.value);
+              }}
               />
             </div>
             <div class="input-row">
@@ -57,6 +82,10 @@ export default function Register() {
                 id="outlined-basic1"
                 label="Your Kitchen Name"
                 variant="outlined"
+                value={kitchenName}
+                onChange={(e) => {
+                setKitchenName(e.target.value);
+              }}
               />
 
               <TextField
@@ -64,6 +93,10 @@ export default function Register() {
                 id="outlined-basic1"
                 label="Password"
                 variant="outlined"
+                value={password}
+                onChange={(e) => {
+                setPassword(e.target.value);
+              }}
               />
             </div>
             <div class="input-row align-end">
@@ -73,6 +106,10 @@ export default function Register() {
                 id="outlined-basic1"
                 label="Confirm Password"
                 variant="outlined"
+                value={passwordConfig}
+                onChange={(e) => {
+                setPasswordConfig(e.target.value);
+              }}
               />
               <div class="terms">
                 {" "}

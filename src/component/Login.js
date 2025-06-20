@@ -2,7 +2,11 @@ import TextField from "@mui/material/TextField";
 import FormControlLabel from "@mui/material/FormControlLabel";
 import Radio from "@mui/material/Radio";
 import Button from "@mui/material/Button";
+
+import { useState } from "react";
 export default function Login() {
+  const [emailInput, setEmailInput] = useState("");
+  const [passwordInput, setPasswordInput] = useState("");
   return (
     <div className="conall">
       <div className="conhead">
@@ -30,21 +34,33 @@ export default function Login() {
           </label>
           <div className="inp2">
             <TextField
-            type="email"
+              type="email"
               id="outlined-basic1"
               label="Enter Your Email"
               variant="outlined"
+              value={emailInput}
+              onChange={(e) => {
+                setEmailInput(e.target.value);
+              }}
             />
             <TextField
-            type="password"
+              type="password"
               id="outlined-basic2"
               label="Enter Your Password"
               variant="outlined"
+              value={passwordInput}
+              onChange={(e) => {
+                setPasswordInput(e.target.value);
+              }}
             />
           </div>
         </div>
         <div className="radio1">
-          <FormControlLabel value="" control={<Radio />} label="Keep me sgined in" />
+          <FormControlLabel
+            value=""
+            control={<Radio />}
+            label="Keep me sgined in"
+          />
         </div>
         <div className="btnCon">
           <Button className="btn3" type="submit" variant="contained">
